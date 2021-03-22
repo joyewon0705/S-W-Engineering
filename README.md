@@ -1,4 +1,3 @@
-# S-W-Engineering
 # GFM Extended Syntax Guide
 
 ## Tables
