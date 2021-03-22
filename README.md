@@ -72,4 +72,32 @@
   | bar |
   | bar | baz | boo |
   
-##
+## Task lists
+
+- **[ ] 항목** 형식의 체크 박스가 있는 목록 리스트임.
+- 항목을 체크하고 싶다면 괄호 사이에 X 또는 x를 입력함.
+  
+  입력:
+  
+      - [x] Finish my changes
+      - [ ] Push my commits to GitHub
+      - [ ] Open a pull request
+  
+  출력:
+  
+  - [x] Finish my changes
+  - [ ] Push my commits to GitHub
+  - [ ] Open a pull request
+
+- 항목이 괄호로 시작하는 경우 \ 문자로 이스케이프해야 함.
+
+  입력:
+  
+      - [ ] \(Optional) Open a followup issue
+  
+  출력:
+  
+  - [ ] \(Optional) Open a followup issue
+
+- 작업 목록은 중첩될 수 있음.
+- 최종적으로 렌더링 된 문서에서 체크 여부를 동적으로 처리할 수 있음.
