@@ -139,3 +139,52 @@
   - 예) a.b-c_d@a.b    
   - 예) a.b-c_d@a.b.    
   - 예) a.b-c_d@a.b-
+
+## Disallowed Raw HTML
+
+- HTML 출력을 렌더링할 때, 다음 HTML tag들에서 < 문자가 entity `&It;`로 대체됨.
+  - <title>, <textarea>, <style>, <xmp>, <iframe>, <noembed>, <noframes>, <script>, <plaintext>
+
+
+## Code Blocks
+
+- 코드 앞뒤에 \`\`\` 문자를 추가해 코드 블록을 만들 수 있음.
+
+  입력:
+  
+      ```
+      function test() {
+        console.log("notice the blank line before this function?");
+      }
+      ```
+
+  출력:
+  
+  ```
+  function test() {
+    console.log("notice the blank line before this function?");
+  }
+  ```
+
+- 언어 식별자를 추가하여 구문 강조 표시(highlighting)를 할 수 있음.
+
+  입력:
+  
+      ```javascript
+      function fancyAlert(arg) {
+        if(arg) {
+          $.facebox({div:'#foo'})
+        }
+      }
+      ```
+  
+  출력:
+  
+  ```javascript
+  function fancyAlert(arg) {
+    if(arg) {
+      $.facebox({div:'#foo'})
+    }
+  }
+  ```
+  
