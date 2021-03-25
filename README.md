@@ -108,3 +108,20 @@
 
 ## Autolinks
 
+- GitHub에서 표준 URL은 자동으로 링크로 변환됨.
+  - 예) Visit https://github.com
+- `www.` 뒤에 유효한 도메인 주소가 있어야 함.
+- 유효한 도메인은 마침표(.)로 구분된 밑줄(\_) 및 하이픈(-), 영숫자 세그먼트로 구성됨.
+- 마침표가 하나 이상 있어야 하며 도메인의 마지막 두 세그먼트에 밑줄이 없어야 함. 
+- scheme `http`는 자동으로 적용됨.
+- 도메인 뒤에는 공백 또는 < 문자를 제외한 문자가 올 수 있음.
+- < 문자는 자동링크를 즉시 끝냄.
+  - 예) www.commonmark.org/he<lp
+- 맨 뒤 구두점(?, !, ., ,, \:, \*, \_, \~)은 링크에 포함되더라도 자동 링크로 간주되진 않음.
+  - 예) www.commonmark.org.
+- 자동링크가 ) 문자로 끝날 경우, 총 괄호 수를 비교해 일치하지 않는 괄호는 고려하지 않음.
+  - 예) www.google.com/search?q=Markup+(business)))
+- 자동링크가 ; 문자로 끝날 경우, entity reference(`&`+하나 이상의 영숫자+`;`)인지 확인하고 맞으면 링크에서 제외함.
+  - 예) www.google.com/search?q=commonmark&hl;
+
+### email autolink
