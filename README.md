@@ -132,7 +132,7 @@
   - 마침표(.)로 나눠진 하나 이상의 영숫자 또는 \-, \_ 문자
   - 적어도 하나의 마침표가 있어야 하며 마지막 문자로 \- 와 \_ 문자는 올 수 없음.
 - scheme `mailto:`는 자동으로 적용됨.
-- + 문자는 @ 앞에만 올 수 있음.
-  - 예) hello@mail+xyz.example isn't valid, but hello+xyz@mail.example is.
+- \+ 문자는 @ 앞에만 올 수 있음.
+  - 예) hello@mail+xyz.example    hello+xyz@mail.example
 - ., \-, \_ 문자는 @ 앞뒤로 모두 올 수 있지만 마침표(.)만 이메일 주소 끝에 올 수 있음.
-  - 예) a.b-c_d@a.b  a.b-c_d@a.b.  a.b-c_d@a.b-  a.b-c_d@a.b_
+  - 예) a.b-c_d@a.b    a.b-c_d@a.b.    a.b-c_d@a.b-    a.b-c_d@a.b_
