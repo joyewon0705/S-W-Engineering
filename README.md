@@ -142,7 +142,7 @@
 
 ## Disallowed Raw HTML
 
-- HTML 출력을 렌더링할 때, 다음 HTML tag들에서 < 문자가 entity `&It;`로 대체됨.
+- HTML 출력을 렌더링할 때, 다음 HTML tag들에서 `<` 문자가 entity `&It;`로 대체됨.
   - <title>, <textarea>, <style>, <xmp>, <iframe>, <noembed>, <noframes>, <script>, <plaintext>
 
 
